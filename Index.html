@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="asset/NicePng_pokeball-png_133030.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="asset/pokemon-logo-8.png" alt="logo pokemon" class="pokemon__logo">
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <input type="text" id="campoPK" placeholder="coloca o numero e clica na bola">>
+            <section class="pokestop">
+                <img src="asset/NicePng_pokeball-png_133030.png" class="pokebola__image1" alt="pokebola, bola vermelha" onclick="pokemon()" >
+                <img src="asset/NicePng_pokeball-png_133030.png" class="pokebola__image2" alt="pokebola, bola vermelha" onclick="">
+                <div class="pokemon">
+                    <div class="pokemon__wrapperImage">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/311.svg"
+                            class="pokemon__image" alt="">
+                    </div>
+                    <div class="pokemon__info">
+                        <h2 class="pokemon__name" id="nomePK">picachu</h2>
+                        <ul class="pokemon__abilities">
+                            <li>teste</li>
+                            <li>teste</li>
+                            <li>teste</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pokemon2">
+                    <div class="pokemon__wrapperImage2">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/311.svg"
+                            class="pokemon__image2" alt="">
+                    </div>
+                    <div class="pokemon__info2">
+                        <h2 class="pokemon__name2">picachu</h2>
+                        <ul class="pokemon__abilities2">
+                            <li>teste</li>
+                            <li>teste</li>
+                            <li>teste</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+
+
+    <footer class="footer">
+        <p class="footer__text"></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
