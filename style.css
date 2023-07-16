@@ -32,14 +32,13 @@ main{
 }
 .pokemon__logo{
     width: 250px;
+    
 }
 /*---------------header---------------*/
 .pokemon__fondoImage{
     width: 100%;
 }
-.main{
-   background-color: #AAFE8F; 
-}
+
 /*------------------pokebola------------*/
 
 .pokebola__image1{
@@ -76,8 +75,9 @@ filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5)) ;
 
 .pokemon__image{
     position: absolute;
-    left: 520px;
+    left:480px;
     top: 520px;
+    transform: scaleX(-1);
     
 }
 .pokemon__image2{
@@ -88,8 +88,9 @@ filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5)) ;
 
 .pokemon__image,
 .pokemon__image2{
-cursor: pointer;
-filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5)) ;
+    height: 180px;
+    cursor: pointer;
+    filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5)) ;
 }
 .pokemon__image:active{
     animation: mover 3s;
@@ -119,7 +120,7 @@ filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5)) ;
     left: 920px;
     top: 300px;
     text-align: center;
-    color: #AAFE8F;
+    color: aliceblue;
 
 }
 .pokemon__info2{
@@ -127,9 +128,41 @@ filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% /0.5)) ;
     left: 580px;
     top: 300px;
     text-align: center;
-    color: #AAFE8F;
-
+    color: #d61f1f;
 }
  ul{
     list-style: none;
 }
+#numeroPk{
+width: 50px;
+height: 50px;
+font-size: 20px;
+border-radius: 50px;
+position: absolute;
+top: 230px;
+left: 540PX;
+background-color: #a42323;
+border: 4px solid #5b6376;
+color: aliceblue;
+}
+#numeroPk2{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50px;
+    position: absolute;
+    top: 230px;
+    left: 990PX;
+    background-color: #ffffff;
+    border: 4px solid #5b6376;
+    color: #a42323;
+    font-weight: bold;
+    }
+.vs-pk{
+    font-size: 40px;
+    color: #AAFE8F;
+    position: absolute;
+    left: 760px;
+    top: 300px;
+}
+

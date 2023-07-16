@@ -20,36 +20,38 @@
     </header>
     <main class="main">
         <div class="container">
-            <input type="text" id="campoPK" placeholder="coloca o numero e clica na bola">>
+            <input type="number" id="numeroPk" placeholder="coloca o numero ">
+            <input type="number" id="numeroPk2" placeholder="coloca o numero">
             <section class="pokestop">
-                <img src="asset/NicePng_pokeball-png_133030.png" class="pokebola__image1" alt="pokebola, bola vermelha" onclick="pokemon()" >
-                <img src="asset/NicePng_pokeball-png_133030.png" class="pokebola__image2" alt="pokebola, bola vermelha" onclick="">
+                <img src="asset/NicePng_pokeball-png_133030.png" class="pokebola__image1" alt="pokebola, bola vermelha" onclick="loadpk()" >
+                <img src="asset/NicePng_pokeball-png_133030.png" class="pokebola__image2" alt="pokebola, bola vermelha" onclick="loadpk2()">
                 <div class="pokemon">
                     <div class="pokemon__wrapperImage">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/311.svg"
-                            class="pokemon__image" alt="">
+                        <img id="picFront"
+                            class="pokemon__image">
                     </div>
                     <div class="pokemon__info">
-                        <h2 class="pokemon__name" id="nomePK">picachu</h2>
-                        <ul class="pokemon__abilities">
-                            <li>teste</li>
-                            <li>teste</li>
-                            <li>teste</li>
-                        </ul>
+                        <h2 class="pokemon__name" id="nome2"></h2>
+                            <p id="abilidade4"></p>
+                            <p id="abilidade5"></p>
+                           
+                            <p id="experi2"></p>                        
+                    </div>
+                    <div class="vs-pk">
+                        <h1>Vs</h1>
                     </div>
                 </div>
                 <div class="pokemon2">
                     <div class="pokemon__wrapperImage2">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/311.svg"
+                        <img id="picFront2"
                             class="pokemon__image2" alt="">
                     </div>
                     <div class="pokemon__info2">
-                        <h2 class="pokemon__name2">picachu</h2>
-                        <ul class="pokemon__abilities2">
-                            <li>teste</li>
-                            <li>teste</li>
-                            <li>teste</li>
-                        </ul>
+                        <h2 class="pokemon__name2" id="nome"></h2>
+                        <p id="abilidade1"></p>
+                        <p id="abilidade2"></p>
+                        
+                        <p id="experi"></p>
                     </div>
                 </div>
             </section>
