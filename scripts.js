@@ -1,8 +1,22 @@
+
 function loadpk(){
 
 	var valorPk= document.getElementById("numeroPk").value;
-	//var url="https://pokeapi.co/api/v2/pokemon-form/25";
 	
+    if (valorPk !== "" && !isNaN(valorPk) && valorPk > 0 && valorPk % 1 === 0) {
+        // Valor correcto, inicializar las variables y continuar con la lógica
+        var errorNumeroPk = document.getElementById("errorNumeroPk");
+        errorNumeroPk.innerHTML = ""; // Limpiar mensaje de error si existe
+        // Resto de la lógica...
+    } else {
+        // Valor incorrecto, mostrar mensaje de error
+        var errorNumeroPk = document.getElementById("errorNumeroPk");
+        errorNumeroPk.innerHTML = "Por favor, ingresa o número válido."; // Mensaje de error
+    }
+
+
+	//var url="https://pokeapi.co/api/v2/pokemon-form/25";
+
 	var url="https://pokeapi.co/api/v2/pokemon/"+valorPk+"/";
 	
 	fetch (url)
@@ -38,10 +52,23 @@ function loadpk(){
 
 function loadpk2(){
 
-	var valorPk= document.getElementById("numeroPk2").value;
+	var valorPk2= document.getElementById("numeroPk2").value;
 	//var url="https://pokeapi.co/api/v2/pokemon-form/25";
+
+  // Validar el valor de numeroPk2
+  if (valorPk2 !== "" && !isNaN(valorPk2) && valorPk2 > 0 && valorPk2 % 1 === 0) {
+	// Valor correcto, inicializar las variables y continuar con la lógica
+	var errorNumeroPk2 = document.getElementById("errorNumeroPk2");
+	errorNumeroPk2.innerHTML = ""; // Limpiar mensaje de error si existe
+} else {
+	// Valor incorrecto, mostrar mensaje de error
+	var errorNumeroPk2 = document.getElementById("errorNumeroPk2");
+	errorNumeroPk2.innerHTML = "Por favor, ingresa o número válido."; // Mensaje de error
+}
+
+
 	
-	var url="https://pokeapi.co/api/v2/pokemon/"+valorPk+"/";
+	var url="https://pokeapi.co/api/v2/pokemon/"+valorPk2+"/";
 	
 	fetch (url)
 		.then((response)=> {
@@ -72,5 +99,6 @@ function loadpk2(){
 		});
 		
 }
+
 
 
