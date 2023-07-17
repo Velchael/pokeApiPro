@@ -22,16 +22,18 @@ main{
 .error {
     color: red;
     font-size: 22px;
-    margin-top: 140px;
-    float: left;
+    position: relative;
+    top: 140px; 
+    right:60px; 
   }
-  .error2 {
+  .error2 {  
     color: #ffffff;
     font-size: 22px;
-    margin-top: 140px;
-    float: right;
+    position: absolute;
+    top: 270px;
+    left: 1050px;  
   }
-  
+
 .container{
     width: 1400px;
     max-width: 100%;
